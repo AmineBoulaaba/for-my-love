@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Favicon for love symbol -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Password Screen -->
+    <div id="password-screen" class="screen">
+        <div class="container">
+            <div class="heart-icon">
+                <i class="fas fa-heart"></i>
+            </div>
+            <h1>A Special Message Awaits</h1>
+            <p>Enter the secret password to unlock your birthday surprise</p>
+            <div class="password-input">
+                <input type="password" id="password" placeholder="Enter our secret code">
+                <button id="submit-password"><i class="fas fa-lock-open"></i> Unlock</button>
+            </div>
+            <p class="hint">Hint: Our initials combined with "ep" (your initials first, then mines)</p>
+        </div>
+    </div>
+
+    <!-- Birthday Message Screen -->
+    <div id="birthday-screen" class="screen hidden">
+        <div class="container">
+            <div class="confetti">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-heart"></i>
+            </div>
+            <h1 class="birthday-title">Happy Birthday, My Love! <i class="fas fa-birthday-cake"></i></h1>
+            <p class="birthday-message">On this special day, I want you to know how incredibly grateful I am to have you in my life. You make every day brighter just by being you.</p>
+            <p class="birthday-message">Today is all about celebrating the amazing person you are!</p>
+            <button id="show-photos" class="btn-photos">
+                <i class="fas fa-images"></i> Click to See Our Memories
+            </button>
+        </div>
+    </div>
+
+    <!-- Photos Screen -->
+        <!-- Photos Screen -->
+    <div id="photos-screen" class="screen hidden">
+        <div class="container">
+            <h1>Our Beautiful Memories <i class="fas fa-heart"></i></h1>
+            <p>Every moment with you is a treasure I'll cherish forever</p>
+            
+            <div class="photos-container">
+                <!-- Photo 1 -->
+                <div class="photo-item">
+                    <div class="photo-frame">
+                        <img src="images/img7.jpg" alt="Our special memory 1" class="photo-real">
+                    </div>
+                    <p class="photo-caption">The beginning of our beautiful journey</p>
+                </div>
+                
+                <!-- Photo 2 -->
+                <div class="photo-item">
+                    <div class="photo-frame">
+                        <img src="images/img2.jpg" alt="Our special memory 2" class="photo-real">
+                    </div>
+                    <p class="photo-caption">Laughter and joy with you</p>
+                </div>
+                
+                <!-- Photo 3 -->
+                <div class="photo-item">
+                    <div class="photo-frame">
+                        <img src="images/img3.jpg" alt="Our special memory 3" class="photo-real">
+                    </div>
+                    <p class="photo-caption">Moments that made my heart smile</p>
+                </div>
+                
+                <!-- Photo 4 -->
+                <div class="photo-item">
+                    <div class="photo-frame">
+                        <img src="images/img4.jpg" alt="Our special memory 4" class="photo-real">
+                    </div>
+                    <p class="photo-caption">Creating memories together</p>
+                </div>
+                
+                <!-- Photo 5 -->
+                <div class="photo-item">
+                    <div class="photo-frame">
+                        <img src="images/img5.jpg" alt="Our special memory 5" class="photo-real">
+                    </div>
+                    <p class="photo-caption">Your smile lights up my world</p>
+                </div>
+                
+                <!-- Photo 6 -->
+                <div class="photo-item">
+                    <div class="photo-frame">
+                        <img src="images/img1.jpg" alt="Our special memory 6" class="photo-real">
+                    </div>
+                    <p class="photo-caption">Adventures with my favorite person</p>
+                </div>
+                
+                <!-- Photo 7 -->
+                <div class="photo-item">
+                    <div class="photo-frame">
+                        <img src="images/img6.jpg" alt="Our special memory 7" class="photo-real">
+                    </div>
+                    <p class="photo-caption">Perfect days with you</p>
+                </div>
+                
+                <!-- Photo 8 -->
+                <div class="photo-item">
+                    <div class="photo-frame">
+                        <img src="images/img8.jpg" alt="Our special memory 8" class="photo-real">
+                    </div>
+                    <p class="photo-caption">My forever love</p>
+                </div>
+            </div>
+            
+            <button id="show-gift" class="btn-gift">
+                <i class="fas fa-gift"></i> Where is my gift?
+            </button>
+        </div>
+    </div>
+            
+            
+
+    <!-- Gift Screen -->
+    <div id="gift-screen" class="screen hidden">
+        <div class="container">
+            <div class="gift-box">
+                <div class="box-lid">
+                    <i class="fas fa-gift"></i>
+                </div>
+                <div class="box-body">
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+            <h1>Your Gift Awaits!</h1>
+            <div class="gift-message">
+                <p>My dearest love,</p>
+                <p>On your special day, I wanted to give you more than just a gift...</p>
+                <p>I wanted to give you a treasure hunt that leads to my heart.</p>
+                <p>The journey begins here:</p>
+    
+                <div class="gift-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h2>Check your car trunk, my love! 🚗💝</h2>
+                </div>
+    
+                <p>But remember, the real gift is the lifetime of love I promise you every day.</p>
+                <p class="signature">With all my love, forever and always,<br>Your <span id="your-name">[Your Name]</span></p>
+            </div>
+            <button id="back-to-start" class="btn-start-over">
+                <i class="fas fa-redo"></i> Relive the surprise
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
