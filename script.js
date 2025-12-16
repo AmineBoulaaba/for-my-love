@@ -13,7 +13,15 @@ const showGiftBtn = document.getElementById('show-gift');
 const backToStartBtn = document.getElementById('back-to-start');
 
 // Change the name here - PUT YOUR NAME!
-document.getElementById('your-name').textContent = "Mimo"; // CHANGE TO YOUR ACTUAL NAME
+document.getElementById('your-name').textContent = "[Your Name]"; // CHANGE TO YOUR ACTUAL NAME
+
+// Function to scroll to top smoothly
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
 
 // Set up event listeners
 submitPasswordBtn.addEventListener('click', checkPassword);
@@ -35,6 +43,9 @@ function checkPassword() {
         // Correct password
         passwordScreen.classList.add('hidden');
         surpriseScreen.classList.remove('hidden');
+        
+        // Scroll to top
+        setTimeout(scrollToTop, 100);
         
         // Add some confetti effect
         createConfetti();
@@ -59,6 +70,9 @@ function showPhotos() {
     surpriseScreen.classList.add('hidden');
     photosScreen.classList.remove('hidden');
     
+    // Scroll to top
+    setTimeout(scrollToTop, 100);
+    
     // Add a little animation to photos
     const photos = document.querySelectorAll('.photo-item');
     photos.forEach((photo, index) => {
@@ -77,6 +91,9 @@ function showPhotos() {
 function showGift() {
     photosScreen.classList.add('hidden');
     giftScreen.classList.remove('hidden');
+    
+    // Scroll to top
+    setTimeout(scrollToTop, 100);
     
     // Animate gift box opening
     const giftBox = document.querySelector('.gift-box');
@@ -97,6 +114,10 @@ function showGift() {
 function goBackToStart() {
     giftScreen.classList.add('hidden');
     passwordScreen.classList.remove('hidden');
+    
+    // Scroll to top
+    setTimeout(scrollToTop, 100);
+    
     passwordInput.value = '';
     passwordInput.focus();
 }
