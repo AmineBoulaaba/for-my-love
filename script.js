@@ -12,8 +12,8 @@ const showPhotosBtn = document.getElementById('show-photos');
 const showGiftBtn = document.getElementById('show-gift');
 const backToStartBtn = document.getElementById('back-to-start');
 
-// Change the name here - PUT YOUR NAME!
-document.getElementById('your-name').textContent = "xxx"; // CHANGE TO YOUR ACTUAL NAME
+// FIXED LINE: Changed 'yourName' to 'your-name' to match HTML
+document.getElementById('your-name').textContent = "Mimo"; // Your name is set here
 
 // Function to scroll to top smoothly
 function scrollToTop() {
