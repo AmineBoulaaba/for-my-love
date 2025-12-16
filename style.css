@@ -138,7 +138,7 @@ button:hover {
     font-style: italic;
 }
 
-/* Birthday Screen */
+/* Surprise Screen */
 .confetti {
     display: flex;
     justify-content: center;
@@ -161,12 +161,12 @@ button:hover {
     50% { transform: translateY(-20px); }
 }
 
-.birthday-title {
+.surprise-title {
     font-size: 4rem;
     margin-bottom: 20px;
 }
 
-.birthday-message {
+.surprise-message {
     font-size: 1.4rem;
     margin-bottom: 20px;
     text-align: center;
@@ -209,28 +209,6 @@ button:hover {
     align-items: center;
     justify-content: center;
     border-bottom: 3px solid #ff6b8b;
-}
-/* Real Photos Styling */
-.photo-real {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.5s ease;
-}
-
-.photo-item:hover .photo-real {
-    transform: scale(1.05);
-}
-
-/* Fallback styling in case image doesn't load */
-.photo-frame {
-    height: 250px;
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 3px solid #ff6b8b;
     overflow: hidden;
     position: relative;
 }
@@ -246,20 +224,27 @@ button:hover {
 .photo-frame:empty::before {
     display: block;
 }
-.photo-placeholder {
-    text-align: center;
-    color: #ff6b8b;
+
+/* Real Photos Styling */
+.photo-real {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
 }
 
-.photo-icon {
-    font-size: 5rem;
-    margin-bottom: 15px;
+.photo-item:hover .photo-real {
+    transform: scale(1.05);
 }
 
 .photo-caption {
     padding: 15px;
     font-size: 1rem;
     color: #555;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-gift {
@@ -368,7 +353,7 @@ button:hover {
         font-size: 2.5rem;
     }
     
-    .birthday-title {
+    .surprise-title {
         font-size: 3rem;
     }
     
@@ -378,5 +363,15 @@ button:hover {
     
     .gift-location h2 {
         font-size: 1.4rem;
+    }
+    
+    .password-input input {
+        font-size: 1.1rem;
+        padding: 12px;
+    }
+    
+    button {
+        padding: 12px 24px;
+        font-size: 1.1rem;
     }
 }
